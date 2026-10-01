@@ -37,7 +37,6 @@ class Solution:
 
         dz2 = 2 * (z2 - y_true) / n  # dL/dz2
         dW2 = dz2.reshape(-1, 1) @ a1.reshape(1, -1)  # dL/dW2
-
         db2 = dz2                      # dL/db2
 
         da1 = dz2.reshape(1, -1) @ W2  # dL/da1
